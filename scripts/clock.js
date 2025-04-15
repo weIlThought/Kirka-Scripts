@@ -1,5 +1,4 @@
 function initClock() {
-    // Uhr-Container erstellen
     const clockContainer = document.createElement("div");
     clockContainer.id = "juice-clock-container";
     clockContainer.style.position = "fixed";
@@ -15,7 +14,7 @@ function initClock() {
     clockContainer.style.transition = "all 0.3s ease";
     clockContainer.style.userSelect = "none";
   
-    // Themes definieren
+    // Themes
     const themes = {
       dark: {
         background: "#111",
@@ -36,7 +35,6 @@ function initClock() {
   
     let currentTheme = "dark";
   
-    // Theme anwenden
     function applyTheme(theme) {
       const t = themes[theme];
       if (!t) return;
@@ -46,7 +44,6 @@ function initClock() {
     }
     applyTheme(currentTheme);
   
-    // Uhrzeit updaten
     function updateClock() {
       const now = new Date();
       const timeString = now.toLocaleTimeString();
@@ -55,7 +52,6 @@ function initClock() {
     setInterval(updateClock, 1000);
     updateClock();
   
-    // Button zum Ein-/Ausblenden
     const toggleButton = document.createElement("button");
     toggleButton.innerText = "🕑";
     toggleButton.style.position = "fixed";
@@ -79,7 +75,6 @@ function initClock() {
       }
     };
   
-    // Theme-Wechsel per Rechtsklick auf den Button
     toggleButton.oncontextmenu = (e) => {
       e.preventDefault();
       const themeKeys = Object.keys(themes);
@@ -89,7 +84,6 @@ function initClock() {
       applyTheme(currentTheme);
     };
   
-    // Größenregler (Mausrad)
     clockContainer.addEventListener("wheel", (e) => {
       e.preventDefault();
       let currentSize = parseFloat(clockContainer.style.fontSize);
@@ -101,16 +95,13 @@ function initClock() {
       clockContainer.style.fontSize = `${Math.max(10, currentSize)}px`;
     });
   
-    // Ins Dokument einfügen
     document.body.appendChild(clockContainer);
     document.body.appendChild(toggleButton);
   }
   
-  // Warten bis document.body existiert
   const clockInterval = setInterval(() => {
     if (document.body) {
       clearInterval(clockInterval);
       initClock();
     }
   }, 100);
-  
