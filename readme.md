@@ -1,48 +1,75 @@
 JuiceClient Clock Script
-This is a customizable clock script for JuiceClient that adds a digital clock to the top center of the screen. It also includes an optional toggle button for showing or hiding the clock, multiple themes, and adjustable font size using the mouse wheel.
 
-Features
-Clock Display: Shows the current time at the top center of the screen.
+Welcome to the JuiceClient Clock Script repository! This script adds a customizable digital clock to the top-center of the screen in JuiceClient. It features an optional toggle button for showing or hiding the clock, multiple themes, and adjustable font sizes using the mouse wheel.
 
-Toggle Button: A button in the top-right corner to show or hide the clock.
+🚀 Getting Started
 
-Themes: Choose between multiple themes (Dark, Light, Neon) by right-clicking the toggle button.
+Follow these steps to set up the script on your local machine:
 
-Font Size Adjustment: Adjust the clock's font size using the mouse wheel.
+1. Install Dependencies
 
-Positioning: The clock is positioned at the top-center of the screen by default, and you can easily toggle visibility.
+Ensure you have JuiceClient set up on your machine and are able to run custom scripts within it. If you're unsure, follow the official JuiceClient installation guide.
 
-Installation
-Download the clock.js script file.
+2. Download the Script
 
-Place it in the appropriate folder in your JuiceClient directory, typically under scripts/.
+Download the clock.js file from the repository.
 
-Make sure the script is loaded in JuiceClient.
+Place the script in the scripts/ directory within your JuiceClient installation folder.
 
-Once loaded, the clock should appear at the top center of the screen.
+3. Load the Script in JuiceClient
 
-Usage
-Toggle Clock: Click the clock toggle button (🕑) in the top-right corner to show or hide the clock.
+Open JuiceClient and load the clock.js script.
 
-Change Themes: Right-click the toggle button to cycle between themes (dark, light, neon).
+Once the script is loaded, a clock will appear at the top-center of the screen.
 
-Adjust Font Size: Use the mouse wheel while hovering over the clock to increase or decrease its font size.
+🔧 Customization
 
-Customization
-You can modify the following settings in the script:
+4. Toggle Clock Visibility
 
-Themes: Customize the colors of the clock by editing the themes object in the script. Available themes include dark, light, and neon.
+Click the clock toggle button in the top-right corner (🕑) to show or hide the clock.
 
-Position: The clock is positioned by default at the top center. You can change the top and left values in the clockContainer.style to reposition it.
+5. Change Themes
 
-Font Size: The default font size is 24px. You can change the default by modifying the fontSize value in the script.
+Right-click the toggle button to cycle through available themes:
 
-Troubleshooting
-Error: Cannot read property 'appendChild' of null
-This error occurs if the document.body element is not yet available when the script runs. The script waits until the body is ready to append the clock container, but if you encounter issues, ensure that the script is loaded after the page content.
+Light: A bright and clean theme.
 
-Clock doesn't appear
-If the clock doesn't show up, check if JuiceClient's custom scripts are correctly configured to load at startup. Also, ensure there are no other conflicts with existing styles or scripts in the client.
+Dark: A more subdued and dark theme for low-light environments.
 
-License
+Neon: A vibrant neon-themed clock.
+
+6. Adjust Font Size
+
+Use your mouse wheel while hovering over the clock to increase or decrease the font size.
+
+🛠️ Development Setup
+
+7. Clone the Repository
+
+Clone the repository to your local machine:
+
+git clone https://github.com/your-username/juiceclient-clock-script.git
+
+8. Open in Code Editor
+
+Navigate to the project folder and open it in your preferred code editor (e.g., VSCode).
+
+9. Modify Script (Optional)
+
+You can easily modify the script to suit your needs:
+
+Themes: Customize the clock's colors in the themes object within the script.
+
+Position: By default, the clock is centered at the top. Adjust the top and left values in clockContainer.style to reposition it.
+
+Font Size: Change the default font size in the script by modifying the fontSize value.
+
+🐞 Troubleshooting
+
+Error: Cannot read property 'appendChild' of nullThis occurs if the document.body element is not available when the script runs. The script waits until the body is fully loaded to append the clock. Ensure the script is being loaded after the page content.
+
+Clock Not AppearingIf the clock doesn't show up, ensure JuiceClient is correctly configured to load custom scripts. Check for any style or script conflicts that may be affecting the display.
+
+📄 License
+
 This script is open-source and distributed under the MIT License. Feel free to modify and distribute it according to the terms of the license.
