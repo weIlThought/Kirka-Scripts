@@ -8,7 +8,10 @@ Follow these steps to set up the script on your local machine:
 
 ### 1. Install Dependencies
 
-Ensure you have JuiceClient set up on your machine and are able to run custom scripts within it. If you're unsure, follow the [official JuiceClient installation guide](https://github.com/juice-client/juice-client).
+Ensure you have JuiceClient set up on your machine and are able to run custom scripts within it.
+[Github] https://github.com/irrvlo/juice-client
+[Website] https://juice.irrvlo.xyz
+[Discord] https://discord.gg/FjzAAdSjng
 
 ### 2. Download the Script
 
@@ -18,7 +21,7 @@ Ensure you have JuiceClient set up on your machine and are able to run custom sc
 ### 3. Load the Script in JuiceClient
 
 - Open JuiceClient and load the `clock.js` script.
-- Once the script is loaded, a clock will appear at the top-center of the screen.
+- Userscripts can be loaded in Documents > JuiceClient > scripts
 
 ---
 
@@ -48,4 +51,4 @@ Ensure you have JuiceClient set up on your machine and are able to run custom sc
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/juiceclient-clock-script.git
+git clone https://github.com/weIlThought/juiceclient-clock-script.git
