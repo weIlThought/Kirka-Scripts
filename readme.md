@@ -51,4 +51,4 @@ Ensure you have JuiceClient set up on your machine and are able to run custom sc
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/weIlThought/juiceclient-clock-script.git
+git clone [https://github.com/weIlThought/Kirka-Scripts.git]
