@@ -1,3 +1,11 @@
+// ==UserScript==
+// @name         Juiced Clock
+// @version      1.0
+// @description  Adds a digital clock to the top-center of the screen.
+// @author       J.C. aka. Jahmes
+// @github       https://github.com/weIlThought/Kirka-Scripts
+// ==/UserScript==
+
 function initClock() {
     const clockContainer = document.createElement("div");
     clockContainer.id = "juice-clock-container";
